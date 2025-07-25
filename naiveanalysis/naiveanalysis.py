@@ -1,5 +1,6 @@
 import praw
 import csv
+import time
 
 ibd_keywords = {
     'crohn': ['crohn', 'crohns', "crohn's"],
@@ -24,49 +25,16 @@ alzheimer_keywords = {
 }
 
 subreddits_ordered = [
-    "mentalhealth",
-    "Anxiety",
-    "depression",
-    "health",
-    "ChronicIllness",
-    "IBD",
-    "CrohnsDisease",
-    "AnxietySupport",
-    "Alzheimers",
-    "caregivers",
-    "ChronicPain",
-    "AskDocs",
-    "medicine",
-    "OCD",
-    "PTSD",
-    "IBS",
-    "MentalHealthSupport",
-    "Stress",
-    "Aging",
-    "Dementia",
-    "brainfog",
-    "GutHealth",
-    "HealthAnxiety",
-    "SleepDisorders",
-    "Nootropics",
-    "Bipolar",
-    "Psychology",
-    "PatientSupport",
-    "UlcerativeColitis",
-    "Neurodegeneration"
+    "mentalhealth", "Anxiety", "depression", "health", "ChronicIllness", "IBD", "CrohnsDisease",
+    "AnxietySupport", "Alzheimers", "caregivers", "ChronicPain", "AskDocs", "medicine", "OCD",
+    "PTSD", "IBS", "MentalHealthSupport", "Stress", "Aging", "Dementia", "brainfog", "GutHealth",
+    "HealthAnxiety", "SleepDisorders", "Nootropics", "Bipolar", "Psychology", "PatientSupport",
+    "UlcerativeColitis", "Neurodegeneration"
 ]
 
 queries_to_search = [
-    "ibd",
-    "crohn",
-    "ulcerative colitis",
-    "anxiety",
-    "panic attack",
-    "stress",
-    "depression",
-    "alzheimer",
-    "dementia",
-    "memory loss"
+    "ibd", "crohn", "ulcerative colitis", "anxiety", "panic attack",
+    "stress", "depression", "alzheimer", "dementia", "memory loss"
 ]
 
 def check_cooccurrence(post_text, ibd_dict, anxiety_dict, alzheimer_dict):
@@ -86,8 +54,9 @@ def check_cooccurrence(post_text, ibd_dict, anxiety_dict, alzheimer_dict):
 
 def fetch_posts(reddit_instance, query, subreddit_name, limit=100):
     posts = []
-    subreddit = reddit_instance.subreddit(subreddit_name)
     try:
+        subreddit = reddit_instance.subreddit(subreddit_name)
+        print(f"Searching '{query}' in r/{subreddit_name}")
         for submission in subreddit.search(query, limit=limit):
             combined_text = (submission.title or "") + " " + (submission.selftext or "")
             posts.append({
@@ -99,23 +68,25 @@ def fetch_posts(reddit_instance, query, subreddit_name, limit=100):
                 "created_utc": submission.created_utc,
                 "combined_text": combined_text
             })
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"Failed in r/{subreddit_name} with query '{query}': {e}")
     return posts
 
 def main():
     reddit = praw.Reddit(
-        client_id="sCeLd37WV10y24pIX06TJw",
+        client_id="sCeLd37WVIOy24plXO6TJw",
         client_secret="Dal5UA-kutoG5GdBFhkEzctFaDMX-A",
-        user_agent="ibd_anxiety_alzheimer by u/Advanced-Sector-6535",
+        user_agent = "windows:ibd_anxiety_alzheimer:1.0 (by u/Advanced-Sector-6535)",
         redirect_uri="http://localhost:8080"
     )
     
     all_posts = []
     for subreddit in subreddits_ordered:
         for query in queries_to_search:
-            fetched = fetch_posts(reddit, query, subreddit, limit=50)  # limit per query per subreddit
+            fetched = fetch_posts(reddit, query, subreddit, limit=10)
+            print(f"→ Found {len(fetched)} posts in r/{subreddit} for '{query}'")
             all_posts.extend(fetched)
+            time.sleep(1)
 
     seen_ids = set()
     filtered_posts = []
@@ -145,7 +116,7 @@ def main():
         "ibd_and_anxiety_and_alzheimer": sum(p["ibd_and_anxiety_and_alzheimer"] for p in filtered_posts)
     }
 
-    print("Summary Statistics:")
+    print("\n--- Summary Statistics ---")
     for k, v in counts.items():
         print(f"{k}: {v}")
 
@@ -158,6 +129,8 @@ def main():
         writer.writeheader()
         for data in filtered_posts:
             writer.writerow(data)
+
+    print(f"\n✅ Written {len(filtered_posts)} posts to reddit_posts_cooccurrence.csv")
 
 if __name__ == "__main__":
     main()

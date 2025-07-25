@@ -1,0 +1,636 @@
+--- Summary Statistics ---
+total_posts: 2189
+has_ibd: 1254
+has_anxiety: 1529
+has_alzheimer: 830
+ibd_and_anxiety: 866
+ibd_and_alzheimer: 404
+anxiety_and_alzheimer: 478
+ibd_and_anxiety_and_alzheimer: 281
+
+
+
+
+(reddit_env) PS C:\Users\abhi\Documents\Programs\ML_DL_AI_Projects\medstarindividualproject> python naiveanalysis.py
+Searching 'ibd' in r/mentalhealth
+→ Found 10 posts in r/mentalhealth for 'ibd'
+Searching 'crohn' in r/mentalhealth
+→ Found 10 posts in r/mentalhealth for 'crohn'
+Searching 'ulcerative colitis' in r/mentalhealth
+→ Found 10 posts in r/mentalhealth for 'ulcerative colitis'
+Searching 'anxiety' in r/mentalhealth
+→ Found 10 posts in r/mentalhealth for 'anxiety'
+Searching 'panic attack' in r/mentalhealth
+→ Found 10 posts in r/mentalhealth for 'panic attack'
+Searching 'stress' in r/mentalhealth
+→ Found 10 posts in r/mentalhealth for 'stress'
+Searching 'depression' in r/mentalhealth
+→ Found 10 posts in r/mentalhealth for 'depression'
+Searching 'alzheimer' in r/mentalhealth
+→ Found 10 posts in r/mentalhealth for 'alzheimer'
+Searching 'dementia' in r/mentalhealth
+→ Found 10 posts in r/mentalhealth for 'dementia'
+Searching 'memory loss' in r/mentalhealth
+→ Found 10 posts in r/mentalhealth for 'memory loss'
+Searching 'ibd' in r/Anxiety
+→ Found 10 posts in r/Anxiety for 'ibd'
+Searching 'crohn' in r/Anxiety
+→ Found 10 posts in r/Anxiety for 'crohn'
+Searching 'ulcerative colitis' in r/Anxiety
+→ Found 10 posts in r/Anxiety for 'ulcerative colitis'
+Searching 'anxiety' in r/Anxiety
+→ Found 10 posts in r/Anxiety for 'anxiety'
+Searching 'panic attack' in r/Anxiety
+→ Found 10 posts in r/Anxiety for 'panic attack'
+Searching 'stress' in r/Anxiety
+→ Found 10 posts in r/Anxiety for 'stress'
+Searching 'depression' in r/Anxiety
+→ Found 10 posts in r/Anxiety for 'depression'
+Searching 'alzheimer' in r/Anxiety
+→ Found 10 posts in r/Anxiety for 'alzheimer'
+Searching 'dementia' in r/Anxiety
+→ Found 10 posts in r/Anxiety for 'dementia'
+Searching 'memory loss' in r/Anxiety
+→ Found 10 posts in r/Anxiety for 'memory loss'
+Searching 'ibd' in r/depression
+→ Found 10 posts in r/depression for 'ibd'
+Searching 'crohn' in r/depression
+→ Found 10 posts in r/depression for 'crohn'
+Searching 'ulcerative colitis' in r/depression
+→ Found 10 posts in r/depression for 'ulcerative colitis'
+Searching 'anxiety' in r/depression
+→ Found 10 posts in r/depression for 'anxiety'
+Searching 'panic attack' in r/depression
+→ Found 10 posts in r/depression for 'panic attack'
+Searching 'stress' in r/depression
+→ Found 10 posts in r/depression for 'stress'
+Searching 'depression' in r/depression
+→ Found 10 posts in r/depression for 'depression'
+Searching 'alzheimer' in r/depression
+→ Found 10 posts in r/depression for 'alzheimer'
+Searching 'dementia' in r/depression
+→ Found 10 posts in r/depression for 'dementia'
+Searching 'memory loss' in r/depression
+→ Found 10 posts in r/depression for 'memory loss'
+Searching 'ibd' in r/health
+→ Found 10 posts in r/health for 'ibd'
+Searching 'crohn' in r/health
+→ Found 10 posts in r/health for 'crohn'
+Searching 'ulcerative colitis' in r/health
+→ Found 10 posts in r/health for 'ulcerative colitis'
+Searching 'anxiety' in r/health
+→ Found 10 posts in r/health for 'anxiety'
+Searching 'panic attack' in r/health
+→ Found 10 posts in r/health for 'panic attack'
+Searching 'stress' in r/health
+→ Found 10 posts in r/health for 'stress'
+Searching 'depression' in r/health
+→ Found 10 posts in r/health for 'depression'
+Searching 'alzheimer' in r/health
+→ Found 10 posts in r/health for 'alzheimer'
+Searching 'dementia' in r/health
+→ Found 10 posts in r/health for 'dementia'
+Searching 'memory loss' in r/health
+→ Found 10 posts in r/health for 'memory loss'
+Searching 'ibd' in r/ChronicIllness
+→ Found 10 posts in r/ChronicIllness for 'ibd'
+Searching 'crohn' in r/ChronicIllness
+→ Found 10 posts in r/ChronicIllness for 'crohn'
+Searching 'ulcerative colitis' in r/ChronicIllness
+→ Found 10 posts in r/ChronicIllness for 'ulcerative colitis'
+Searching 'anxiety' in r/ChronicIllness
+→ Found 10 posts in r/ChronicIllness for 'anxiety'
+Searching 'panic attack' in r/ChronicIllness
+→ Found 10 posts in r/ChronicIllness for 'panic attack'
+Searching 'stress' in r/ChronicIllness
+→ Found 10 posts in r/ChronicIllness for 'stress'
+Searching 'depression' in r/ChronicIllness
+→ Found 10 posts in r/ChronicIllness for 'depression'
+Searching 'alzheimer' in r/ChronicIllness
+→ Found 10 posts in r/ChronicIllness for 'alzheimer'
+Searching 'dementia' in r/ChronicIllness
+→ Found 10 posts in r/ChronicIllness for 'dementia'
+Searching 'memory loss' in r/ChronicIllness
+→ Found 10 posts in r/ChronicIllness for 'memory loss'
+Searching 'ibd' in r/IBD
+→ Found 10 posts in r/IBD for 'ibd'
+Searching 'crohn' in r/IBD
+→ Found 10 posts in r/IBD for 'crohn'
+Searching 'ulcerative colitis' in r/IBD
+→ Found 10 posts in r/IBD for 'ulcerative colitis'
+Searching 'anxiety' in r/IBD
+→ Found 10 posts in r/IBD for 'anxiety'
+Searching 'panic attack' in r/IBD
+→ Found 10 posts in r/IBD for 'panic attack'
+Searching 'stress' in r/IBD
+→ Found 10 posts in r/IBD for 'stress'
+Searching 'depression' in r/IBD
+→ Found 10 posts in r/IBD for 'depression'
+Searching 'alzheimer' in r/IBD
+→ Found 1 posts in r/IBD for 'alzheimer'
+Searching 'dementia' in r/IBD
+→ Found 0 posts in r/IBD for 'dementia'
+Searching 'memory loss' in r/IBD
+→ Found 8 posts in r/IBD for 'memory loss'
+Searching 'ibd' in r/CrohnsDisease
+→ Found 10 posts in r/CrohnsDisease for 'ibd'
+Searching 'crohn' in r/CrohnsDisease
+→ Found 10 posts in r/CrohnsDisease for 'crohn'
+Searching 'ulcerative colitis' in r/CrohnsDisease
+→ Found 10 posts in r/CrohnsDisease for 'ulcerative colitis'
+Searching 'anxiety' in r/CrohnsDisease
+→ Found 10 posts in r/CrohnsDisease for 'anxiety'
+Searching 'panic attack' in r/CrohnsDisease
+→ Found 10 posts in r/CrohnsDisease for 'panic attack'
+Searching 'stress' in r/CrohnsDisease
+→ Found 10 posts in r/CrohnsDisease for 'stress'
+Searching 'depression' in r/CrohnsDisease
+→ Found 10 posts in r/CrohnsDisease for 'depression'
+Searching 'alzheimer' in r/CrohnsDisease
+→ Found 10 posts in r/CrohnsDisease for 'alzheimer'
+Searching 'dementia' in r/CrohnsDisease
+→ Found 10 posts in r/CrohnsDisease for 'dementia'
+Searching 'memory loss' in r/CrohnsDisease
+→ Found 10 posts in r/CrohnsDisease for 'memory loss'
+Searching 'ibd' in r/AnxietySupport
+→ Found 0 posts in r/AnxietySupport for 'ibd'
+Searching 'crohn' in r/AnxietySupport
+→ Found 0 posts in r/AnxietySupport for 'crohn'
+Searching 'ulcerative colitis' in r/AnxietySupport
+→ Found 0 posts in r/AnxietySupport for 'ulcerative colitis'
+Searching 'anxiety' in r/AnxietySupport
+→ Found 4 posts in r/AnxietySupport for 'anxiety'
+Searching 'panic attack' in r/AnxietySupport
+→ Found 1 posts in r/AnxietySupport for 'panic attack'
+Searching 'stress' in r/AnxietySupport
+→ Found 0 posts in r/AnxietySupport for 'stress'
+Searching 'depression' in r/AnxietySupport
+→ Found 2 posts in r/AnxietySupport for 'depression'
+Searching 'alzheimer' in r/AnxietySupport
+→ Found 0 posts in r/AnxietySupport for 'alzheimer'
+Searching 'dementia' in r/AnxietySupport
+→ Found 0 posts in r/AnxietySupport for 'dementia'
+Searching 'memory loss' in r/AnxietySupport
+→ Found 0 posts in r/AnxietySupport for 'memory loss'
+Searching 'ibd' in r/Alzheimers
+→ Found 0 posts in r/Alzheimers for 'ibd'
+Searching 'crohn' in r/Alzheimers
+→ Found 1 posts in r/Alzheimers for 'crohn'
+Searching 'ulcerative colitis' in r/Alzheimers
+→ Found 1 posts in r/Alzheimers for 'ulcerative colitis'
+Searching 'anxiety' in r/Alzheimers
+→ Found 10 posts in r/Alzheimers for 'anxiety'
+Searching 'panic attack' in r/Alzheimers
+→ Found 10 posts in r/Alzheimers for 'panic attack'
+Searching 'stress' in r/Alzheimers
+→ Found 10 posts in r/Alzheimers for 'stress'
+Searching 'depression' in r/Alzheimers
+→ Found 10 posts in r/Alzheimers for 'depression'
+Searching 'alzheimer' in r/Alzheimers
+→ Found 10 posts in r/Alzheimers for 'alzheimer'
+Searching 'dementia' in r/Alzheimers
+→ Found 10 posts in r/Alzheimers for 'dementia'
+Searching 'memory loss' in r/Alzheimers
+→ Found 10 posts in r/Alzheimers for 'memory loss'
+Searching 'ibd' in r/caregivers
+→ Found 0 posts in r/caregivers for 'ibd'
+Searching 'crohn' in r/caregivers
+→ Found 2 posts in r/caregivers for 'crohn'
+Searching 'ulcerative colitis' in r/caregivers
+→ Found 0 posts in r/caregivers for 'ulcerative colitis'
+Searching 'anxiety' in r/caregivers
+→ Found 10 posts in r/caregivers for 'anxiety'
+Searching 'panic attack' in r/caregivers
+→ Found 10 posts in r/caregivers for 'panic attack'
+Searching 'stress' in r/caregivers
+→ Found 10 posts in r/caregivers for 'stress'
+Searching 'depression' in r/caregivers
+→ Found 10 posts in r/caregivers for 'depression'
+Searching 'alzheimer' in r/caregivers
+→ Found 10 posts in r/caregivers for 'alzheimer'
+Searching 'dementia' in r/caregivers
+→ Found 10 posts in r/caregivers for 'dementia'
+Searching 'memory loss' in r/caregivers
+→ Found 10 posts in r/caregivers for 'memory loss'
+Searching 'ibd' in r/ChronicPain
+→ Found 10 posts in r/ChronicPain for 'ibd'
+Searching 'crohn' in r/ChronicPain
+→ Found 10 posts in r/ChronicPain for 'crohn'
+Searching 'ulcerative colitis' in r/ChronicPain
+→ Found 10 posts in r/ChronicPain for 'ulcerative colitis'
+Searching 'anxiety' in r/ChronicPain
+→ Found 10 posts in r/ChronicPain for 'anxiety'
+Searching 'panic attack' in r/ChronicPain
+→ Found 10 posts in r/ChronicPain for 'panic attack'
+Searching 'stress' in r/ChronicPain
+→ Found 10 posts in r/ChronicPain for 'stress'
+Searching 'depression' in r/ChronicPain
+→ Found 10 posts in r/ChronicPain for 'depression'
+Searching 'alzheimer' in r/ChronicPain
+→ Found 10 posts in r/ChronicPain for 'alzheimer'
+Searching 'dementia' in r/ChronicPain
+→ Found 10 posts in r/ChronicPain for 'dementia'
+Searching 'memory loss' in r/ChronicPain
+→ Found 10 posts in r/ChronicPain for 'memory loss'
+Searching 'ibd' in r/AskDocs
+→ Found 10 posts in r/AskDocs for 'ibd'
+Searching 'crohn' in r/AskDocs
+→ Found 10 posts in r/AskDocs for 'crohn'
+Searching 'ulcerative colitis' in r/AskDocs
+→ Found 10 posts in r/AskDocs for 'ulcerative colitis'
+Searching 'anxiety' in r/AskDocs
+→ Found 10 posts in r/AskDocs for 'anxiety'
+Searching 'panic attack' in r/AskDocs
+→ Found 10 posts in r/AskDocs for 'panic attack'
+Searching 'stress' in r/AskDocs
+→ Found 10 posts in r/AskDocs for 'stress'
+Searching 'depression' in r/AskDocs
+→ Found 10 posts in r/AskDocs for 'depression'
+Searching 'alzheimer' in r/AskDocs
+→ Found 10 posts in r/AskDocs for 'alzheimer'
+Searching 'dementia' in r/AskDocs
+→ Found 10 posts in r/AskDocs for 'dementia'
+Searching 'memory loss' in r/AskDocs
+→ Found 10 posts in r/AskDocs for 'memory loss'
+Searching 'ibd' in r/medicine
+→ Found 10 posts in r/medicine for 'ibd'
+Searching 'crohn' in r/medicine
+→ Found 10 posts in r/medicine for 'crohn'
+Searching 'ulcerative colitis' in r/medicine
+→ Found 10 posts in r/medicine for 'ulcerative colitis'
+Searching 'anxiety' in r/medicine
+→ Found 10 posts in r/medicine for 'anxiety'
+Searching 'panic attack' in r/medicine
+→ Found 10 posts in r/medicine for 'panic attack'
+Searching 'stress' in r/medicine
+→ Found 10 posts in r/medicine for 'stress'
+Searching 'depression' in r/medicine
+→ Found 10 posts in r/medicine for 'depression'
+Searching 'alzheimer' in r/medicine
+→ Found 10 posts in r/medicine for 'alzheimer'
+Searching 'dementia' in r/medicine
+→ Found 10 posts in r/medicine for 'dementia'
+Searching 'memory loss' in r/medicine
+→ Found 10 posts in r/medicine for 'memory loss'
+Searching 'ibd' in r/OCD
+→ Found 7 posts in r/OCD for 'ibd'
+Searching 'crohn' in r/OCD
+→ Found 10 posts in r/OCD for 'crohn'
+Searching 'ulcerative colitis' in r/OCD
+→ Found 7 posts in r/OCD for 'ulcerative colitis'
+Searching 'anxiety' in r/OCD
+→ Found 10 posts in r/OCD for 'anxiety'
+Searching 'panic attack' in r/OCD
+→ Found 10 posts in r/OCD for 'panic attack'
+Searching 'stress' in r/OCD
+→ Found 10 posts in r/OCD for 'stress'
+Searching 'depression' in r/OCD
+→ Found 10 posts in r/OCD for 'depression'
+Searching 'alzheimer' in r/OCD
+→ Found 10 posts in r/OCD for 'alzheimer'
+Searching 'dementia' in r/OCD
+→ Found 10 posts in r/OCD for 'dementia'
+Searching 'memory loss' in r/OCD
+→ Found 10 posts in r/OCD for 'memory loss'
+Searching 'ibd' in r/PTSD
+→ Found 4 posts in r/PTSD for 'ibd'
+Searching 'crohn' in r/PTSD
+→ Found 10 posts in r/PTSD for 'crohn'
+Searching 'ulcerative colitis' in r/PTSD
+→ Found 4 posts in r/PTSD for 'ulcerative colitis'
+Searching 'anxiety' in r/PTSD
+→ Found 10 posts in r/PTSD for 'anxiety'
+Searching 'panic attack' in r/PTSD
+→ Found 10 posts in r/PTSD for 'panic attack'
+Searching 'stress' in r/PTSD
+→ Found 10 posts in r/PTSD for 'stress'
+Searching 'depression' in r/PTSD
+→ Found 10 posts in r/PTSD for 'depression'
+Searching 'alzheimer' in r/PTSD
+→ Found 10 posts in r/PTSD for 'alzheimer'
+Searching 'dementia' in r/PTSD
+→ Found 10 posts in r/PTSD for 'dementia'
+Searching 'memory loss' in r/PTSD
+→ Found 10 posts in r/PTSD for 'memory loss'
+Searching 'ibd' in r/IBS
+→ Found 10 posts in r/IBS for 'ibd'
+Searching 'crohn' in r/IBS
+→ Found 10 posts in r/IBS for 'crohn'
+Searching 'ulcerative colitis' in r/IBS
+→ Found 10 posts in r/IBS for 'ulcerative colitis'
+Searching 'anxiety' in r/IBS
+→ Found 10 posts in r/IBS for 'anxiety'
+Searching 'panic attack' in r/IBS
+→ Found 10 posts in r/IBS for 'panic attack'
+Searching 'stress' in r/IBS
+→ Found 10 posts in r/IBS for 'stress'
+Searching 'depression' in r/IBS
+→ Found 10 posts in r/IBS for 'depression'
+Searching 'alzheimer' in r/IBS
+→ Found 10 posts in r/IBS for 'alzheimer'
+Searching 'dementia' in r/IBS
+→ Found 10 posts in r/IBS for 'dementia'
+Searching 'memory loss' in r/IBS
+→ Found 10 posts in r/IBS for 'memory loss'
+Searching 'ibd' in r/MentalHealthSupport
+→ Found 2 posts in r/MentalHealthSupport for 'ibd'
+Searching 'crohn' in r/MentalHealthSupport
+→ Found 6 posts in r/MentalHealthSupport for 'crohn'
+Searching 'ulcerative colitis' in r/MentalHealthSupport
+→ Found 3 posts in r/MentalHealthSupport for 'ulcerative colitis'
+Searching 'anxiety' in r/MentalHealthSupport
+→ Found 10 posts in r/MentalHealthSupport for 'anxiety'
+Searching 'panic attack' in r/MentalHealthSupport
+→ Found 10 posts in r/MentalHealthSupport for 'panic attack'
+Searching 'stress' in r/MentalHealthSupport
+→ Found 10 posts in r/MentalHealthSupport for 'stress'
+Searching 'depression' in r/MentalHealthSupport
+→ Found 10 posts in r/MentalHealthSupport for 'depression'
+Searching 'alzheimer' in r/MentalHealthSupport
+→ Found 10 posts in r/MentalHealthSupport for 'alzheimer'
+Searching 'dementia' in r/MentalHealthSupport
+→ Found 10 posts in r/MentalHealthSupport for 'dementia'
+Searching 'memory loss' in r/MentalHealthSupport
+→ Found 10 posts in r/MentalHealthSupport for 'memory loss'
+Searching 'ibd' in r/Stress
+→ Found 1 posts in r/Stress for 'ibd'
+Searching 'crohn' in r/Stress
+→ Found 0 posts in r/Stress for 'crohn'
+Searching 'ulcerative colitis' in r/Stress
+→ Found 0 posts in r/Stress for 'ulcerative colitis'
+Searching 'anxiety' in r/Stress
+→ Found 10 posts in r/Stress for 'anxiety'
+Searching 'panic attack' in r/Stress
+→ Found 10 posts in r/Stress for 'panic attack'
+Searching 'stress' in r/Stress
+→ Found 10 posts in r/Stress for 'stress'
+Searching 'depression' in r/Stress
+→ Found 10 posts in r/Stress for 'depression'
+Searching 'alzheimer' in r/Stress
+→ Found 9 posts in r/Stress for 'alzheimer'
+Searching 'dementia' in r/Stress
+→ Found 10 posts in r/Stress for 'dementia'
+Searching 'memory loss' in r/Stress
+→ Found 10 posts in r/Stress for 'memory loss'
+Searching 'ibd' in r/Aging
+→ Found 1 posts in r/Aging for 'ibd'
+Searching 'crohn' in r/Aging
+→ Found 0 posts in r/Aging for 'crohn'
+Searching 'ulcerative colitis' in r/Aging
+→ Found 1 posts in r/Aging for 'ulcerative colitis'
+Searching 'anxiety' in r/Aging
+→ Found 10 posts in r/Aging for 'anxiety'
+Searching 'panic attack' in r/Aging
+→ Found 3 posts in r/Aging for 'panic attack'
+Searching 'stress' in r/Aging
+→ Found 10 posts in r/Aging for 'stress'
+Searching 'depression' in r/Aging
+→ Found 10 posts in r/Aging for 'depression'
+Searching 'alzheimer' in r/Aging
+→ Found 10 posts in r/Aging for 'alzheimer'
+Searching 'dementia' in r/Aging
+→ Found 10 posts in r/Aging for 'dementia'
+Searching 'memory loss' in r/Aging
+→ Found 10 posts in r/Aging for 'memory loss'
+Searching 'ibd' in r/Dementia
+→ Found 2 posts in r/Dementia for 'ibd'
+Searching 'crohn' in r/Dementia
+→ Found 5 posts in r/Dementia for 'crohn'
+Searching 'ulcerative colitis' in r/Dementia
+→ Found 4 posts in r/Dementia for 'ulcerative colitis'
+Searching 'anxiety' in r/Dementia
+→ Found 10 posts in r/Dementia for 'anxiety'
+Searching 'panic attack' in r/Dementia
+→ Found 10 posts in r/Dementia for 'panic attack'
+Searching 'stress' in r/Dementia
+→ Found 10 posts in r/Dementia for 'stress'
+Searching 'depression' in r/Dementia
+→ Found 10 posts in r/Dementia for 'depression'
+Searching 'alzheimer' in r/Dementia
+→ Found 10 posts in r/Dementia for 'alzheimer'
+Searching 'dementia' in r/Dementia
+→ Found 10 posts in r/Dementia for 'dementia'
+Searching 'memory loss' in r/Dementia
+→ Found 10 posts in r/Dementia for 'memory loss'
+Searching 'ibd' in r/brainfog
+→ Found 3 posts in r/brainfog for 'ibd'
+Searching 'crohn' in r/brainfog
+→ Found 10 posts in r/brainfog for 'crohn'
+Searching 'ulcerative colitis' in r/brainfog
+→ Found 1 posts in r/brainfog for 'ulcerative colitis'
+Searching 'anxiety' in r/brainfog
+→ Found 10 posts in r/brainfog for 'anxiety'
+Searching 'panic attack' in r/brainfog
+→ Found 10 posts in r/brainfog for 'panic attack'
+Searching 'stress' in r/brainfog
+→ Found 10 posts in r/brainfog for 'stress'
+Searching 'depression' in r/brainfog
+→ Found 10 posts in r/brainfog for 'depression'
+Searching 'alzheimer' in r/brainfog
+→ Found 10 posts in r/brainfog for 'alzheimer'
+Searching 'dementia' in r/brainfog
+→ Found 10 posts in r/brainfog for 'dementia'
+Searching 'memory loss' in r/brainfog
+→ Found 10 posts in r/brainfog for 'memory loss'
+Searching 'ibd' in r/GutHealth
+→ Found 10 posts in r/GutHealth for 'ibd'
+Searching 'crohn' in r/GutHealth
+→ Found 10 posts in r/GutHealth for 'crohn'
+Searching 'ulcerative colitis' in r/GutHealth
+→ Found 10 posts in r/GutHealth for 'ulcerative colitis'
+Searching 'anxiety' in r/GutHealth
+→ Found 10 posts in r/GutHealth for 'anxiety'
+Searching 'panic attack' in r/GutHealth
+→ Found 10 posts in r/GutHealth for 'panic attack'
+Searching 'stress' in r/GutHealth
+→ Found 10 posts in r/GutHealth for 'stress'
+Searching 'depression' in r/GutHealth
+→ Found 10 posts in r/GutHealth for 'depression'
+Searching 'alzheimer' in r/GutHealth
+→ Found 7 posts in r/GutHealth for 'alzheimer'
+Searching 'dementia' in r/GutHealth
+→ Found 2 posts in r/GutHealth for 'dementia'
+Searching 'memory loss' in r/GutHealth
+→ Found 4 posts in r/GutHealth for 'memory loss'
+Searching 'ibd' in r/HealthAnxiety
+→ Found 10 posts in r/HealthAnxiety for 'ibd'
+Searching 'crohn' in r/HealthAnxiety
+→ Found 10 posts in r/HealthAnxiety for 'crohn'
+Searching 'ulcerative colitis' in r/HealthAnxiety
+→ Found 10 posts in r/HealthAnxiety for 'ulcerative colitis'
+Searching 'anxiety' in r/HealthAnxiety
+→ Found 10 posts in r/HealthAnxiety for 'anxiety'
+Searching 'panic attack' in r/HealthAnxiety
+→ Found 10 posts in r/HealthAnxiety for 'panic attack'
+Searching 'stress' in r/HealthAnxiety
+→ Found 10 posts in r/HealthAnxiety for 'stress'
+Searching 'depression' in r/HealthAnxiety
+→ Found 10 posts in r/HealthAnxiety for 'depression'
+Searching 'alzheimer' in r/HealthAnxiety
+→ Found 10 posts in r/HealthAnxiety for 'alzheimer'
+Searching 'dementia' in r/HealthAnxiety
+→ Found 10 posts in r/HealthAnxiety for 'dementia'
+Searching 'memory loss' in r/HealthAnxiety
+→ Found 10 posts in r/HealthAnxiety for 'memory loss'
+Searching 'ibd' in r/SleepDisorders
+→ Found 0 posts in r/SleepDisorders for 'ibd'
+Searching 'crohn' in r/SleepDisorders
+→ Found 1 posts in r/SleepDisorders for 'crohn'
+Searching 'ulcerative colitis' in r/SleepDisorders
+→ Found 0 posts in r/SleepDisorders for 'ulcerative colitis'
+Searching 'anxiety' in r/SleepDisorders
+→ Found 10 posts in r/SleepDisorders for 'anxiety'
+Searching 'panic attack' in r/SleepDisorders
+→ Found 10 posts in r/SleepDisorders for 'panic attack'
+Searching 'stress' in r/SleepDisorders
+→ Found 10 posts in r/SleepDisorders for 'stress'
+Searching 'depression' in r/SleepDisorders
+→ Found 10 posts in r/SleepDisorders for 'depression'
+Searching 'alzheimer' in r/SleepDisorders
+→ Found 2 posts in r/SleepDisorders for 'alzheimer'
+Searching 'dementia' in r/SleepDisorders
+→ Found 8 posts in r/SleepDisorders for 'dementia'
+Searching 'memory loss' in r/SleepDisorders
+→ Found 2 posts in r/SleepDisorders for 'memory loss'
+Searching 'ibd' in r/Nootropics
+→ Found 0 posts in r/Nootropics for 'ibd'
+Searching 'crohn' in r/Nootropics
+→ Found 0 posts in r/Nootropics for 'crohn'
+Searching 'ulcerative colitis' in r/Nootropics
+→ Found 0 posts in r/Nootropics for 'ulcerative colitis'
+Searching 'anxiety' in r/Nootropics
+→ Found 0 posts in r/Nootropics for 'anxiety'
+Searching 'panic attack' in r/Nootropics
+→ Found 0 posts in r/Nootropics for 'panic attack'
+Searching 'stress' in r/Nootropics
+→ Found 0 posts in r/Nootropics for 'stress'
+Searching 'depression' in r/Nootropics
+→ Found 0 posts in r/Nootropics for 'depression'
+Searching 'alzheimer' in r/Nootropics
+→ Found 0 posts in r/Nootropics for 'alzheimer'
+Searching 'dementia' in r/Nootropics
+→ Found 0 posts in r/Nootropics for 'dementia'
+Searching 'memory loss' in r/Nootropics
+→ Found 0 posts in r/Nootropics for 'memory loss'
+Searching 'ibd' in r/Bipolar
+→ Found 10 posts in r/Bipolar for 'ibd'
+Searching 'crohn' in r/Bipolar
+→ Found 10 posts in r/Bipolar for 'crohn'
+Searching 'ulcerative colitis' in r/Bipolar
+→ Found 10 posts in r/Bipolar for 'ulcerative colitis'
+Searching 'anxiety' in r/Bipolar
+→ Found 10 posts in r/Bipolar for 'anxiety'
+Searching 'panic attack' in r/Bipolar
+→ Found 10 posts in r/Bipolar for 'panic attack'
+Searching 'stress' in r/Bipolar
+→ Found 10 posts in r/Bipolar for 'stress'
+Searching 'depression' in r/Bipolar
+→ Found 10 posts in r/Bipolar for 'depression'
+Searching 'alzheimer' in r/Bipolar
+→ Found 10 posts in r/Bipolar for 'alzheimer'
+Searching 'dementia' in r/Bipolar
+→ Found 10 posts in r/Bipolar for 'dementia'
+Searching 'memory loss' in r/Bipolar
+→ Found 10 posts in r/Bipolar for 'memory loss'
+Searching 'ibd' in r/Psychology
+→ Found 0 posts in r/Psychology for 'ibd'
+Searching 'crohn' in r/Psychology
+→ Found 0 posts in r/Psychology for 'crohn'
+Searching 'ulcerative colitis' in r/Psychology
+→ Found 0 posts in r/Psychology for 'ulcerative colitis'
+Searching 'anxiety' in r/Psychology
+→ Found 10 posts in r/Psychology for 'anxiety'
+Searching 'panic attack' in r/Psychology
+→ Found 10 posts in r/Psychology for 'panic attack'
+Searching 'stress' in r/Psychology
+→ Found 10 posts in r/Psychology for 'stress'
+Searching 'depression' in r/Psychology
+→ Found 10 posts in r/Psychology for 'depression'
+Searching 'alzheimer' in r/Psychology
+→ Found 10 posts in r/Psychology for 'alzheimer'
+Searching 'dementia' in r/Psychology
+→ Found 10 posts in r/Psychology for 'dementia'
+Searching 'memory loss' in r/Psychology
+→ Found 10 posts in r/Psychology for 'memory loss'
+Searching 'ibd' in r/PatientSupport
+Failed in r/PatientSupport with query 'ibd': received 403 HTTP response
+→ Found 0 posts in r/PatientSupport for 'ibd'
+Searching 'crohn' in r/PatientSupport
+Failed in r/PatientSupport with query 'crohn': received 403 HTTP response
+→ Found 0 posts in r/PatientSupport for 'crohn'
+Searching 'ulcerative colitis' in r/PatientSupport
+Failed in r/PatientSupport with query 'ulcerative colitis': received 403 HTTP response
+→ Found 0 posts in r/PatientSupport for 'ulcerative colitis'
+Searching 'anxiety' in r/PatientSupport
+Failed in r/PatientSupport with query 'anxiety': received 403 HTTP response
+→ Found 0 posts in r/PatientSupport for 'anxiety'
+Searching 'panic attack' in r/PatientSupport
+Failed in r/PatientSupport with query 'panic attack': received 403 HTTP response
+→ Found 0 posts in r/PatientSupport for 'panic attack'
+Searching 'stress' in r/PatientSupport
+Failed in r/PatientSupport with query 'stress': received 403 HTTP response
+→ Found 0 posts in r/PatientSupport for 'stress'
+Searching 'depression' in r/PatientSupport
+Failed in r/PatientSupport with query 'depression': received 403 HTTP response
+→ Found 0 posts in r/PatientSupport for 'depression'
+Searching 'alzheimer' in r/PatientSupport
+Failed in r/PatientSupport with query 'alzheimer': received 403 HTTP response
+→ Found 0 posts in r/PatientSupport for 'alzheimer'
+Searching 'dementia' in r/PatientSupport
+Failed in r/PatientSupport with query 'dementia': received 403 HTTP response
+→ Found 0 posts in r/PatientSupport for 'dementia'
+Searching 'memory loss' in r/PatientSupport
+Failed in r/PatientSupport with query 'memory loss': received 403 HTTP response
+→ Found 0 posts in r/PatientSupport for 'memory loss'
+Searching 'ibd' in r/UlcerativeColitis
+→ Found 10 posts in r/UlcerativeColitis for 'ibd'
+Searching 'crohn' in r/UlcerativeColitis
+→ Found 10 posts in r/UlcerativeColitis for 'crohn'
+Searching 'ulcerative colitis' in r/UlcerativeColitis
+→ Found 10 posts in r/UlcerativeColitis for 'ulcerative colitis'
+Searching 'anxiety' in r/UlcerativeColitis
+→ Found 10 posts in r/UlcerativeColitis for 'anxiety'
+Searching 'panic attack' in r/UlcerativeColitis
+→ Found 10 posts in r/UlcerativeColitis for 'panic attack'
+Searching 'stress' in r/UlcerativeColitis
+→ Found 10 posts in r/UlcerativeColitis for 'stress'
+Searching 'depression' in r/UlcerativeColitis
+→ Found 10 posts in r/UlcerativeColitis for 'depression'
+Searching 'alzheimer' in r/UlcerativeColitis
+→ Found 7 posts in r/UlcerativeColitis for 'alzheimer'
+Searching 'dementia' in r/UlcerativeColitis
+→ Found 5 posts in r/UlcerativeColitis for 'dementia'
+Searching 'memory loss' in r/UlcerativeColitis
+→ Found 10 posts in r/UlcerativeColitis for 'memory loss'
+Searching 'ibd' in r/Neurodegeneration
+Failed in r/Neurodegeneration with query 'ibd': Redirect to /subreddits/search
+→ Found 0 posts in r/Neurodegeneration for 'ibd'
+Searching 'crohn' in r/Neurodegeneration
+Failed in r/Neurodegeneration with query 'crohn': Redirect to /subreddits/search
+→ Found 0 posts in r/Neurodegeneration for 'crohn'
+Searching 'ulcerative colitis' in r/Neurodegeneration
+Failed in r/Neurodegeneration with query 'ulcerative colitis': Redirect to /subreddits/search
+→ Found 0 posts in r/Neurodegeneration for 'ulcerative colitis'
+Searching 'anxiety' in r/Neurodegeneration
+Failed in r/Neurodegeneration with query 'anxiety': Redirect to /subreddits/search
+→ Found 0 posts in r/Neurodegeneration for 'anxiety'
+Searching 'panic attack' in r/Neurodegeneration
+Failed in r/Neurodegeneration with query 'panic attack': Redirect to /subreddits/search
+→ Found 0 posts in r/Neurodegeneration for 'panic attack'
+Searching 'stress' in r/Neurodegeneration
+Failed in r/Neurodegeneration with query 'stress': Redirect to /subreddits/search
+→ Found 0 posts in r/Neurodegeneration for 'stress'
+Searching 'depression' in r/Neurodegeneration
+Failed in r/Neurodegeneration with query 'depression': Redirect to /subreddits/search
+→ Found 0 posts in r/Neurodegeneration for 'depression'
+Searching 'alzheimer' in r/Neurodegeneration
+Failed in r/Neurodegeneration with query 'alzheimer': Redirect to /subreddits/search
+→ Found 0 posts in r/Neurodegeneration for 'alzheimer'
+Searching 'dementia' in r/Neurodegeneration
+Failed in r/Neurodegeneration with query 'dementia': Redirect to /subreddits/search
+→ Found 0 posts in r/Neurodegeneration for 'dementia'
+Searching 'memory loss' in r/Neurodegeneration
+Failed in r/Neurodegeneration with query 'memory loss': Redirect to /subreddits/search
+→ Found 0 posts in r/Neurodegeneration for 'memory loss'
+
+✅ Written 2189 posts to reddit_posts_cooccurrence.csv

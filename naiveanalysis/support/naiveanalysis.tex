@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Probability Analysis of IBD, Anxiety, and Alzheimer's Co-occurrence}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\begin{align*}
+P(\text{Anxiety} \mid \text{IBD}) &= 0.691 \\
+P(\text{IBD} \mid \text{Anxiety}) &= 0.567 \\
+P(\text{Alzheimer} \mid \text{IBD}) &= 0.323 \\
+P(\text{Alzheimer} \mid \text{Anxiety}) &= 0.312 \\
+P(\text{IBD} \cap \text{Anxiety} \cap \text{Alzheimer}) &= 0.128
+\end{align*}
+\end{abstract}
+
+\section*{Data Summary}
+
+Total number of posts, $N = 2189$
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Event & Count & Probability \\ \midrule
+IBD mentions, $N_{\text{IBD}}$ & 1254 & $P(\text{IBD}) = \frac{1254}{2189} = 0.573$ \\
+Anxiety mentions, $N_{\text{Anxiety}}$ & 1529 & $P(\text{Anxiety}) = \frac{1529}{2189} = 0.698$ \\
+Alzheimer mentions, $N_{\text{Alzheimer}}$ & 830 & $P(\text{Alzheimer}) = \frac{830}{2189} = 0.379$ \\
+IBD \& Anxiety & 866 & $P(\text{IBD} \cap \text{Anxiety}) = \frac{866}{2189} = 0.396$ \\
+IBD \& Alzheimer & 404 & $P(\text{IBD} \cap \text{Alzheimer}) = \frac{404}{2189} = 0.185$ \\
+Anxiety \& Alzheimer & 478 & $P(\text{Anxiety} \cap \text{Alzheimer}) = \frac{478}{2189} = 0.218$ \\
+IBD \& Anxiety \& Alzheimer & 281 & $P(\text{IBD} \cap \text{Anxiety} \cap \text{Alzheimer}) = \frac{281}{2189} = 0.128$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{Joint and Conditional Probabilities}
+
+\begin{align*}
+P(\text{IBD}) &= 0.573 \\
+P(\text{Anxiety}) &= 0.698 \\
+P(\text{Alzheimer}) &= 0.379 \\
+P(\text{IBD} \cap \text{Anxiety}) &= 0.396 \\
+P(\text{IBD} \cap \text{Alzheimer}) &= 0.185 \\
+P(\text{Anxiety} \cap \text{Alzheimer}) &= 0.218 \\
+P(\text{IBD} \cap \text{Anxiety} \cap \text{Alzheimer}) &= 0.128
+\end{align*}
+
+\bigskip
+
+\begin{align*}
+P(\text{Anxiety} \mid \text{IBD}) &= \frac{P(\text{IBD} \cap \text{Anxiety})}{P(\text{IBD})} = \frac{0.396}{0.573} = 0.691 \\
+P(\text{IBD} \mid \text{Anxiety}) &= \frac{P(\text{IBD} \cap \text{Anxiety})}{P(\text{Anxiety})} = \frac{0.396}{0.698} = 0.567 \\
+P(\text{Alzheimer} \mid \text{IBD}) &= \frac{P(\text{IBD} \cap \text{Alzheimer})}{P(\text{IBD})} = \frac{0.185}{0.573} = 0.323 \\
+P(\text{Alzheimer} \mid \text{Anxiety}) &= \frac{P(\text{Anxiety} \cap \text{Alzheimer})}{P(\text{Anxiety})} = \frac{0.218}{0.698} = 0.312
+\end{align*}
+
+\section*{Remarks}
+
+The above probabilities are computed from a dataset filtered by keyword-based searches in Reddit posts. This introduces a sampling bias, meaning these probabilities reflect co-occurrence patterns within this biased sample and may not represent true prevalence or clinical comorbidity rates.
+
+\end{document}

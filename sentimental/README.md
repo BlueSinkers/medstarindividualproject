@@ -1,0 +1,1 @@
+This is the folder for sentimental analysis of the Reddit posts to learn more about the actual correlations between IBD and anxiety/other symptoms based on what stuff we've found.
